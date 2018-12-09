@@ -435,7 +435,7 @@ namespace MotoGP_Ponomarev
 
         private void GithubPIButton_Click(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://github.com/NapiformGoose/Course-Project-on-OOP");
         }
     }
 }
