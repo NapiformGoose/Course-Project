@@ -1,0 +1,22 @@
+﻿Маверик Виньялес;Movistar Yamaha MotoGP;Япония;25;Yamaha YZR0M1 2018;25/1;25/1;-/-;10/6;25/1 
+Дани Педроса;Repsol Honda Team;Япония;26;Honda RC213V 2018;11/5;-/-;16/3;25/1;16/3 
+Валентино Росси;Movistar Yamaha MotoGP;Япония;46;Yamaha YZR0M1 2018;16/3;20/2;20/2;6/10;-/-
+Жоан Зарко;Monster Yamaha Tech 3;Франция;5;Yamaha YZR0M1 2018/2017;-/-;11/5;11/5;13/4;20/2 
+Хорхе Лоренсо;Ducati Team;Италия;99;Ducati Desmosedici GP18;5/11;-/-;7/9;16/3;-/6 
+Данило Петруччи;Alma Pramac Racing;Италия;9;Ducati Desmosedici GP18/GP17;-/-;9/7;8/8;9/7;-/- 
+Джек Миллер;Alma Pramac Racing;Италия;43;Ducati Desmosedici GP18/GP17;8/8;7/9;6/10;-/-;8/8 
+Альваро Баутиста;Angel Nieto Team;Испания;19;Ducati Desmosedici GP17/16;-/-;13/4;1/15;-/-;-/- 
+Андреа Янноне;Team Suzuki Ecstar;Япония;29;Suzuki GSX0RR;-/-;-/16;9/7;-/-;6/10 
+Скотт Реддинг;Aprilia Racing Team Gresini;Италия;45;Aprilia RS0GP;9/7;8/8;4/12;5/11;-/- 
+Алеш Эспаргаро;Aprilia Racing Team Gresini;Италия;41;Aprilia RS0GP;10/6;-/-;-/17;7/9;-/- 
+Алекс Ринс;Team Suzuki Ecstar;Япония;42;Suzuki GSX0RR;7/9;-/-;-/-;-/-;-/- 
+Пол Эспаргаро;Red Bull KTM Factory Racing;Австрия;44;KTM RC18;-/16;2/14;-/-;-/-;4/12  
+Эстеве Рабат;Reale Avintia Racing;Испания;53;Ducati Desmosedici GP17/GP16;5/11;9/7;8/8;2/14;-/- 
+Карел Абрагам;Angel Nieto Team;Испания;17;Ducati Desmosedici GP17/16;1/15;-/20;-/-;-/18;-/17
+Брэдли Смит;Red Bull KTM Factory Racing;Австрия;38;KTM RC18;-/18;-/-;-/16;3/13;2/14 
+Ксавье Симеон;Reale Avintia Racing;Испания;10;Ducati Desmosedici GP17/GP16;-/21;-/21;-/20;-/17;-/18 
+Такааки Накагами;LCR Honda;Монако;30;Honda RC213V 2018/2017;-/17;3/13;2/14;4/12;1/15 
+Кэл Кратчлоу;LCR Honda;Монако;35;Honda RC213V 2018/2017;-/-;16/3;13/4;-/-;11/5
+Хафиз Сьяхрин;Monster Yamaha Tech 3;Франция;55;Yamaha YZR0M1 2018/2017;2/14;7/9;-/-;-/16;4/12
+Марк Маркес;Repsol Honda Team;Япония;93;Honda RC213V 2018;13/4;-/-;25/1;20/2;-/- 
+Андреа Довициозо;Ducati Team;Италия;4;Ducati Desmosedici GP18;20/2;-/-;10/6;11/5;13/4 

@@ -1,0 +1,392 @@
+﻿<Window x:Class="MotoGP_Ponomarev.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1080" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Resources>
+        <DataTemplate x:Key="GrandPrixTemplate">
+            <StackPanel Orientation="Vertical" Width="445" Background="#FF1C414F">
+                <Border Height="70" Width="445" Margin="0 30 0 0" BorderThickness="0" Background="{x:Null}">
+                    <TextBlock Text="{Binding Path=NameGrandPrix}" Foreground="White" FontSize="40" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Height="50" Width="445" Background="{x:Null}">
+                    <TextBlock Text="{Binding Path=NameRaceGP}" Foreground="#FFE2E3E4" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Height="80" Width="445"  Background="{x:Null}" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="0 10 0 0" >
+                        <TextBlock Text="Очки" FontSize="30" Foreground="#FFE2E3E4" Margin="75 0 30 0"/>
+                        <TextBlock Text="{Binding Path=PointGP}" Foreground="#FFE2E3E4" FontSize="40" Width="80" TextAlignment="Center"/>
+                        <TextBlock Text="Место" FontSize="30" Foreground="#FFE2E3E4" Margin="30 0 5 0"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="PilotFrameTemplate">
+            <Border Name="PilotFrame" BorderBrush="#FFB4B4B4" Height="120" BorderThickness="0.5" Background="#FF1C414F" >
+                <StackPanel Orientation="Horizontal">
+                    <Grid Margin="20 20 0 0" VerticalAlignment="Top">
+                        <Ellipse Fill="{x:Null}" Grid.Row="0" Width="80" Height="80" Stroke="#FFDAD1D1" StrokeThickness="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Path=PilotNumber}" FontSize="50" Foreground="#FFE2E3E4" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 5"/>
+                    </Grid>
+
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Pilot name" FontSize="18" Foreground="#FFBDBDBD" Margin="50 25 0 0"/>
+                            <TextBlock Text="Team" FontSize="18" Foreground="#FFBDBDBD" Margin="190 25 0 0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=PilotName}" FontSize="25" Width="230" Foreground="#FFE2E3E4"  Margin="50 0 0 0"/>
+                            <TextBlock Text="{Binding Path=TeamName}" FontSize="25" Width="350" Foreground="#FFE2E3E4"  Margin="45 0 0 0"/>
+                            <Button Name="ButtonUpdate" Tag="{Binding Path=Guid}" Background="{x:Null}" BorderBrush="{x:Null}"
+                                BorderThickness="0.5" Foreground="#FFE2E3E4" Margin="20 0 0 40" Visibility="Visible" Click="ButtonUpdate_Click">
+                                <materialDesign:PackIcon Kind="Pencil" Height="25" Width="25"/>
+                            </Button>
+                            <Button Name="ButtonDel" Tag="{Binding Path=Guid}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Margin="0 0 0 40" 
+                        Visibility="Visible" Command="{Binding DataContext.RemoveCommand, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"  Click="ButtonDel_Click">
+                                <materialDesign:PackIcon Kind="Delete" Height="25" Width="25"/>
+                            </Button>
+                            <Button x:Name="ButtonInfoOpen" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0 0 0 40" Foreground="#FFE2E3E4">
+                                <materialDesign:PackIcon Kind="InformationOutline" Height="25" Width="25"/>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Country" FontSize="18" Foreground="#FFBDBDBD" Margin="50 0 0 0"/>
+                            <TextBlock Text="Motorcycle" FontSize="18" Foreground="#FFBDBDBD" Margin="212 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=Country}" FontSize="25" Width="230" Foreground="#FFE2E3E4"  Margin="50 0 0 0"/>
+                            <TextBlock Text="{Binding Path=MotoModel}" FontSize="25" Width="350" Foreground="#FFE2E3E4"  Margin="45 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="ButtonResultsGP" Margin="240 10 0 15 " Tag="{Binding Path=Guid}" materialDesign:ShadowAssist.ShadowDepth="Depth2" Grid.Column="1" Grid.Row="2" Height="60" Width="320" FontSize="20"
+                            Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="ButtonResultsGP_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="Trophy" Height="45" Width="45"/>
+                                    <TextBlock Text="Grand Prix Results 2018" Margin="15 10 0 0"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Name="ButtonInfoClose" Margin="250 0 0 0" Grid.Column="2" Grid.Row="2" IsEnabled="False" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE2E3E4">
+                                <materialDesign:PackIcon Kind="ArrowUp" Height="25" Width="25"/>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <DataTemplate.Triggers>
+                <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonInfoOpen">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Height" Storyboard.TargetName="PilotFrame">
+                                    <EasingDoubleKeyFrame KeyTime="0" Value="120"/>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="260"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <BooleanAnimationUsingKeyFrames Storyboard.TargetName="ButtonInfoOpen"
+                                                                    Storyboard.TargetProperty="IsEnabled">
+                                    <DiscreteBooleanKeyFrame KeyTime="00:00:00"
+                                                                 Value="False" />
+                                </BooleanAnimationUsingKeyFrames>
+                                <BooleanAnimationUsingKeyFrames Storyboard.TargetName="ButtonInfoClose"
+                                                                    Storyboard.TargetProperty="IsEnabled">
+                                    <DiscreteBooleanKeyFrame KeyTime="00:00:00"
+                                                                 Value="True" />
+                                </BooleanAnimationUsingKeyFrames>
+
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonInfoClose">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Height" Storyboard.TargetName="PilotFrame">
+                                    <EasingDoubleKeyFrame KeyTime="0" Value="260"/>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="120"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <BooleanAnimationUsingKeyFrames Storyboard.TargetName="ButtonInfoOpen"
+                                                                    Storyboard.TargetProperty="IsEnabled">
+                                    <DiscreteBooleanKeyFrame KeyTime="00:00:00"
+                                                                 Value="True" />
+                                </BooleanAnimationUsingKeyFrames>
+                                <BooleanAnimationUsingKeyFrames Storyboard.TargetName="ButtonInfoClose"
+                                                                    Storyboard.TargetProperty="IsEnabled">
+                                    <DiscreteBooleanKeyFrame KeyTime="00:00:00"
+                                                                 Value="False" />
+                                </BooleanAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="LeftMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="260"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="LeftMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="260"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="70"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenLeftMenu">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseLeftMenu">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+
+    </Window.Triggers>
+
+    <Grid Background="#FF222E3F">
+        <Grid Name="MainMenu" Height="70" VerticalAlignment="Top" >
+            <Button Name="ButtonExit" HorizontalAlignment="Right" materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="0 0 20 0" Height="50" Width="130" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="ButtonExit_Click">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                    <materialDesign:PackIcon Kind="Login" VerticalAlignment="Center" Width="33" Height="35"/>
+                    <TextBlock  Text="Exit" Width="63" VerticalAlignment="Center" FontSize="32"/>
+                </StackPanel>
+            </Button>
+
+        </Grid>
+
+        <Grid Name="MainPanel" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="530" Width="1010">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+           
+            <Button Name="ButtonAdd" Height="60" Background="#FF6D976F" BorderBrush="#FFB4B4B4" BorderThickness="0.5" Foreground="#FFE2E3E4" Margin="5" 
+                    Visibility="Hidden" Click="ButtonAdd_Click">
+                <materialDesign:PackIcon Kind="PlusCircleOutline" Height="40" Width="40"/>
+            </Button>
+            <Border Name="ShadowOverlay" Grid.RowSpan="3" Visibility="Collapsed" >
+                <Border.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.6"/>
+                </Border.Background>
+            </Border>
+            <Border Name="LBPlace" Grid.Row="1" Height="415" Width="1000" BorderThickness="0 0 1 0" >
+                <ListBox Name="LB" ScrollViewer.CanContentScroll="False" ItemsSource="{Binding MotoGPCollectionVM}" SelectedItem="{Binding SelectedPilot}" ItemTemplate="{StaticResource PilotFrameTemplate}"/>
+            </Border>
+
+            <Border Name="GPPlace" Grid.Row="1" Height="400" Width="600" Visibility="Hidden">
+                <Border Name="WindowResultsGP" Grid.Row="1" Height="310" Width="600" Background="#FF1C414F">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="ButtonLeft" Tag="false" Height="70" Width="70" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonLeft_Click">
+                            <materialDesign:PackIcon Kind="ChevronLeft" Height="70" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <StackPanel>
+                            <ListBox Name="GP" Width="460" Background="{x:Null}" IsHitTestVisible="False" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource GrandPrixTemplate}" Foreground="#DD6A3838">
+                                <ListBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Horizontal"/>
+                                    </ItemsPanelTemplate>
+                                </ListBox.ItemsPanel>
+                            </ListBox>
+
+                            <Button Name="ButtonCancelGP" Content="CANCEL" Width="150" Height="50" materialDesign:ShadowAssist.ShadowDepth="Depth2" Background="#FF3D897B" FontSize="25" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="ButtonCancelGP_Click"/>
+                        </StackPanel>
+
+                        <Button Name="ButtonRight" Height="70" Width="70" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonRight_Click">
+                            <materialDesign:PackIcon Kind="ChevronRight" Height="70" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Border>
+            
+        </Grid>
+        <Grid Name="Contacts" Height="530" Width="1010" Visibility="Hidden" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="LinkedinButton" materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="50 0 0 40" Height="300" Width="300" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="{x:Null}" BorderThickness="2" BorderBrush="White" Foreground="#FFE2E3E4" Click="LinkedinButton_Click">
+                <materialDesign:PackIcon Kind="Linkedin" Height="200" Width="200"/>
+            </Button>
+            <Button Name="GithubPIButton" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="0 0 50 40" Height="300" Width="300" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="{x:Null}" BorderThickness="2" BorderBrush="White" Foreground="#FFE2E3E4" Click="GithubPIButton_Click">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="GithubBox" Height="200" Width="200"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid Name="StartScreen" Visibility="Collapsed">
+            <Ellipse Fill="#FF42597C" Stroke="#FF42597C" Height="12" Width="12" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="120 120 0 0"/>
+            <TextBlock Text="To work with data, select one of the repositories. Data is presented in the form of windows" Foreground="#FF42597C" FontSize="22" Margin="140 110 0 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBlock Text="for each pilot" Foreground="#FF42597C" FontSize="22" Margin="140 150 0 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Ellipse Fill="#FF42597C" Stroke="#FF42597C" Height="12" Width="12" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="120 200 0 0"/>
+            <TextBlock Text="Use the function buttoms to edit the pilot data. All changes are automatically saved" Foreground="#FF42597C" FontSize="22" Margin="140 190 0 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBlock Text="in files located in the project folder" Foreground="#FF42597C" FontSize="22" Margin="140 230 0 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Ellipse Fill="#FF594040" Stroke="#FF594040" Height="12" Width="12" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="120 280 0 0"/>
+            <TextBlock Text="No data entry verification. Enter data according to the prompts" Foreground="#FF594040" FontSize="22" Margin="140 270 0 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        </Grid>  
+        <Grid Name="PersonalInform" Height="520" Width="500" HorizontalAlignment="Center" Background="#FF375072" Visibility="Hidden">
+            <StackPanel Name="PersonalInformationSP">
+                <TextBlock Text="Personal information" FontSize="23" Margin="25 10 0 0"/>
+                <Border Height="1" Background="Gray" Width="450"/>
+                <TextBlock Text="Pilot Name" FontSize="17" Margin="25 30 0 0" Foreground="#FFD1CACA"/>
+                <TextBox x:Name="PilotNameTextBox" materialDesign:HintAssist.Hint="Christophe Ponsson" TextChanged="AddUpdateWindowTextBox_TextChanged"
+                         Background="#FF1B3E6C" Width="450" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                <TextBlock Text="Team Name" FontSize="17" Margin="25 10 0 0" Foreground="#FFD1CACA"/>
+                <TextBox x:Name="NameTeamTextBox" materialDesign:HintAssist.Hint="Repsol Honda Team" TextChanged="AddUpdateWindowTextBox_TextChanged" 
+                         Background="#FF1B3E6C" Width="450" BorderThickness="1.5" BorderBrush="#FF7B9DB0"/>
+                <TextBlock Text="Country" FontSize="17" Margin="25 10 0 0" Foreground="#FFD1CACA"/>
+                <TextBox x:Name="CountryTextBox" materialDesign:HintAssist.Hint="Japan" TextChanged="AddUpdateWindowTextBox_TextChanged" 
+                         Background="#FF1B3E6C" Width="450" BorderThickness="1.5" BorderBrush="#FF7B9DB0"/>
+                <TextBlock Text="Motorcycle" FontSize="17" Margin="25 10 0 0" Foreground="#FFD1CACA" />
+                <TextBox x:Name="ModelMotoTextBox" materialDesign:HintAssist.Hint="Honda RC213V 2018" TextChanged="AddUpdateWindowTextBox_TextChanged" 
+                         Background="#FF1B3E6C" Width="450" BorderThickness="1.5" BorderBrush="#FF7B9DB0"/>
+                <TextBlock Text="Pilot Number" FontSize="17" Margin="25 10 0 0" Foreground="#FFD1CACA" />
+                <TextBox x:Name="PilotNumberTextBox" materialDesign:HintAssist.Hint="19" TextChanged="AddUpdateWindowTextBox_TextChanged"
+                         Background="#FF1B3E6C" Width="450" BorderThickness="1.5" BorderBrush="#FF7B9DB0"/>
+                <Button Name="TransitionToGPResultsButton" HorizontalAlignment="Center" materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="0 40 0 0" Height="30" Width="220" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="TransitionToGPResultsButton_Click">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                        <TextBlock  Text="Grand Prix Results" Width="150" VerticalAlignment="Center" FontSize="18"/>
+                        <materialDesign:PackIcon Kind="ArrowRight" VerticalAlignment="Center" Width="25" Height="35" Margin="12 0 0 0"/>
+                    </StackPanel>
+                </Button>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Name="AddAcceptPIButton" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" IsEnabled="False" Margin="115 20 0 0" Height="50" Width="110" Command="{Binding AddCommand}" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="AddAcceptWindow_Click">
+                        <TextBlock  Text="Accept" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                    <Button Name="AddCancelPIButton" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" Margin="10 20 130 0" Height="50" Width="110" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF798D89" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="AddCancelWindow_Click">
+                        <TextBlock  Text="Cancel" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                    <Button Name="UpdateAcceptPIButton" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" IsEnabled="False" Margin="115 20 0 0" Height="50" Width="110" Command="{Binding UpdateCommand}" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="UpdateAcceptWindow_Click">
+                        <TextBlock  Text="Accept" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                    <Button Name="UpdateCancelPIButton" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" Margin="0 20 120 0" Height="50" Width="110" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF798D89" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="UpdateCancelWindow_Click">
+                        <TextBlock  Text="Cancel" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                </Grid>
+            </StackPanel>
+
+        </Grid>
+        <Grid Name="GPResults" Height="520" Width="500" HorizontalAlignment="Center" Background="#FF375072" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="140"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3">
+                <TextBlock Text="Grand Prix Results" FontSize="23" Margin="25 10 0 0"/>
+                <Border Height="1" Background="Gray" Width="450" Margin="0 0 0 290"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Margin="0 25 0 0">
+                <TextBlock Text="Grand Prix Qatar" FontSize="20" Margin="25 10 0 0"/>
+                <TextBlock Text="Losail" FontSize="18" Margin="25 0 0 0"/>
+                <TextBlock Text="Grand Prix Argentinian" FontSize="20" Margin="25 10 0 0"/>
+                <TextBlock Text="Termas de Rio Hondo" FontSize="18" Margin="25 0 0 0"/>
+                <TextBlock Text="Grand Prix German" FontSize="20" Margin="25 10 0 0"/>
+                <TextBlock Text="Sachsenring" FontSize="18" Margin="25 0 0 0"/>
+                <TextBlock Text="Grand Prix Spanish" FontSize="20" Margin="25 10 0 0"/>
+                <TextBlock Text="Circuito de Jerez" FontSize="18" Margin="25 0 0 0"/>
+                <TextBlock Text="Grand Prix French" FontSize="20" Margin="25 10 0 0"/>
+                <TextBlock Text="Le Mans Circuit Bugatti" FontSize="18" Margin="25 0 0 0"/>
+                </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <TextBlock Text="Points" Width="70" FontSize="20" Margin="10 10 0 0"/>
+                <TextBox x:Name="PointKTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 15 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                <TextBox x:Name="PointATextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 30 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                <TextBox x:Name="PointAmericTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 35 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                <TextBox x:Name="PointSpainTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 35 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                <TextBox x:Name="PointFranceTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 30 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2">
+                <TextBlock Text="Place" FontSize="20" Margin="25 10 0 0"/>
+                <StackPanel Grid.Row="1" Grid.Column="2">
+                    <TextBox x:Name="PlaceKTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 15 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                    <TextBox x:Name="PlaceATextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 30 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                    <TextBox x:Name="PlaceAmericTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 35 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                    <TextBox x:Name="PlaceSpainTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 35 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                    <TextBox x:Name="PlaceFranceTextBox" materialDesign:HintAssist.Hint="25" TextChanged="AddUpdateWindowTextBox_TextChanged" Margin="0 30 0 0" Background="#FF1B3E6C" Width="70" BorderThickness="1.5" BorderBrush="#FF7B9DB0" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="3" Grid.Row="2">
+                <Button Name="TransitionToPIButton" HorizontalAlignment="Center" materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="0 20 0 0" Height="30" Width="235" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="TransitionToPIButton_Click">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                        <materialDesign:PackIcon Kind="ArrowLeft" VerticalAlignment="Center" Width="25" Height="35" Margin="0 0 12 0"/>
+                        <TextBlock  Text="Personal information" Width="170" VerticalAlignment="Center" FontSize="18"/>
+                    </StackPanel>
+                </Button>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Name="AddAcceptGPButton" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" IsEnabled="False" Command="{Binding AddCommand}" Margin="115 20 0 0" Height="50" Width="110"  Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="AddAcceptWindow_Click">
+                        <TextBlock  Text="Accept" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                    <Button Name="AddCancelGPButton" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" Margin="0 20 120 0" Height="50" Width="110" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF798D89" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="AddCancelWindow_Click">
+                        <TextBlock  Text="Cancel" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                    <Button Name="UpdateAcceptGPButton" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" IsEnabled="False" Command="{Binding UpdateCommand}" Margin="115 20 0 0" Height="50" Width="110"  Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF3D897B" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="UpdateAcceptWindow_Click">
+                        <TextBlock  Text="Accept" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                    <Button Name="UpdateCancelGPButton" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth2" Visibility="Collapsed" Margin="0 20 120 0" Height="50" Width="110" Style="{StaticResource MaterialDesignRaisedLightButton}"  Background="#FF798D89" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="UpdateCancelWindow_Click">
+                        <TextBlock  Text="Cancel" Width="100" Margin="10 0 0 0" FontSize="20"/>
+                    </Button>
+                </Grid>
+            </StackPanel>
+        </Grid>
+       
+        <Grid Name="LeftMenu" Width="70" HorizontalAlignment="Left" Background="#FF3D897B" materialDesign:ShadowAssist.ShadowDepth="Depth2">
+            <StackPanel>
+                <Grid >
+                    <Button Name="ButtonOpenLeftMenu" Height="60" Width="60" Margin="5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="ButtonOpenLeftMenu_Click">
+                        <materialDesign:PackIcon Kind="Menu" Width="40" Height="40"/>
+                    </Button>
+                    <Button Name="ButtonCloseLeftMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" VerticalAlignment="Top"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE2E3E4" Click="ButtonCloseLeftMenu_Click">
+                        <materialDesign:PackIcon Kind="ArrowLeft" Width="50" Height="50"/>
+                    </Button>
+                </Grid>
+                <ListView Name="ListViewLeftMenu" Foreground="#FFE2E3E4" Background="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewLeftMenu_SelectionChanged">
+
+                    <ListViewItem Name="ItemMemoryRepository" Height="90">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Archive" Height="40" Width="40" Margin="7"/>
+                            <TextBlock Text="Memory Repository" VerticalAlignment="Center" Margin="20 10" FontSize="18"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Name="ItemTextRepository" Height="90">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Archive" Height="40" Width="40" Margin="7"/>
+                            <TextBlock Text="Text Repository" VerticalAlignment="Center" Margin="20 10"  FontSize="18"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Name="ItemBinRepository" Height="90">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Archive" Height="40" Width="40" Margin="7"/>
+                            <TextBlock Text="Binary Repository" VerticalAlignment="Center"  Margin="20 10"  FontSize="18"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Name="Place" Height="150">
+                    </ListViewItem>
+                    <ListViewItem Name="ItemAuthor" Height="90">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Contacts" Height="40" Width="40" Margin="7"/>
+                            <TextBlock Text="Contacts" VerticalAlignment="Center"  Margin="20 10"  FontSize="18"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

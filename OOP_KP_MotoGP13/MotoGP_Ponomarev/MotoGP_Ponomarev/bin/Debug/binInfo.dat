@@ -1,0 +1,35 @@
+    ??          GMotoGP_Ponomarev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null   LSystem.Collections.Generic.List`1[[MotoGP_Ponomarev.MotoGP, MotoGP_Ponomarev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]   _items_size_version  MotoGP_Ponomarev.MotoGP[]   	                    MotoGP_Ponomarev.MotoGP   	   	   	   	   	   		   	
+   	   	   	
+   	   	   	   	   	   	   	   	   	   	   	   	   
+   ISystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089   MotoGP_Ponomarev.MotoGP	   	namePilotnameTeamcountrynumberPilot	modelMotopositionTableChemp2017positionTableChemp2018idPropertyChanged    1System.ComponentModel.PropertyChangedEventHandler         Дани Педроса   Repsol Honda Team   Япония      Honda RC213V 2018           
+         Валентино Росси    Movistar Yamaha MotoGP!   Япония.   "   Yamaha YZR0M1 2018           
+      #   Жоан Зарко$   Monster Yamaha Tech 3%   Франция   &   Yamaha YZR0M1 2018/2017           
+      '   Хорхе Лоренсо(   Ducati Team)   Италияc   *   Ducati Desmosedici GP18           
+      +   Данило Петруччи,   Alma Pramac Racing-   Италия	   .   Ducati Desmosedici GP18/GP17           
+	      /   Джек Миллер0   Alma Pramac Racing1   Италия+   2   Ducati Desmosedici GP18/GP17           
+
+      3   Альваро Баутиста4   Angel Nieto Team5   Испания   6   Ducati Desmosedici GP17/16        
+   
+      7   Андреа Янноне8   Team Suzuki Ecstar9   Япония   :   
+Suzuki GSX0RR           
+      ;   Скотт Реддинг<   Aprilia Racing Team Gresini=   Италия-   >   
+Aprilia RS0GP           
+
+      ?   Алеш Эспаргаро@   Aprilia Racing Team GresiniA   Италия)   B   
+Aprilia RS0GP           
+      C   Алекс РинсD   Team Suzuki EcstarE   Япония*   F   
+Suzuki GSX0RR           
+      G   Пол ЭспаргароH   Red Bull KTM Factory RacingI   Австрия,   J   KTM RC18        
+   
+      K   Эстеве РабатL   Reale Avintia RacingM   Испания5   N   Ducati Desmosedici GP17/GP16           
+      O   Карел АбрагамP   Angel Nieto TeamQ   Испания   R   Ducati Desmosedici GP17/16           
+      S   Брэдли СмитT   Red Bull KTM Factory RacingU   Австрия&   V   KTM RC18           
+      W   Ксавье СимеонX   Reale Avintia RacingY   Испания
+   Z   Ducati Desmosedici GP17/GP16           
+      [   Такааки Накагами\   	LCR Honda]   Монако   ^   Honda RC213V 2018/2017           
+      _   Кэл Кратчлоу`   	LCR Hondaa   Монако#   b   Honda RC213V 2018/2017           
+      c   Хафиз Сьяхринd   Monster Yamaha Tech 3e   Франция7   f   Yamaha YZR0M1 2018/2017           
+      g   Марк Маркесh   Repsol Honda Teami   Япония]   j   Honda RC213V 2018        	   
+      k   Андреа Довициозоl   Ducati Teamm   Италия   n   Ducati Desmosedici GP18           
+      o   Маверик Виньялесp   Movistar Yamaha MotoGPq   Япония   r   Yamaha YZR0M1 2018           
+

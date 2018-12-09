@@ -1,0 +1,5 @@
+﻿Grand Prix Qatar;Losail
+Grand Prix Argentinian;Termas de Rio Hondo
+Grand Prix German;Sachsenring
+Grand Prix Spanish;Circuito de Jerez
+Grand Prix French;Le Mans Circuit Bugatti

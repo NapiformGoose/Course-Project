@@ -1,0 +1,69 @@
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csprojAssemblyReference.cache
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\MainWindow.baml
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\MainWindow.g.cs
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\App.g.cs
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev_MarkupCompile.cache
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev_MarkupCompile.lref
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.exe
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.pdb
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.exe.config
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.exe
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.pdb
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignColors.dll
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\App.baml
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.g.resources
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.Properties.Resources.resources
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.GenerateResource.cache
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.CoreCompileInputs.cache
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.CopyComplete
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\ModelLibrary.dll
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\ModelLibrary.pdb
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.exe.config
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.exe
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.pdb
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignColors.dll
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\ModelLibrary.dll
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\ModelLibrary.pdb
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csprojAssemblyReference.cache
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\MainWindow.baml
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\MainWindow.g.cs
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\App.g.cs
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev_MarkupCompile.cache
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev_MarkupCompile.lref
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\App.baml
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.g.resources
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.Properties.Resources.resources
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.GenerateResource.cache
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.CoreCompileInputs.cache
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.CopyComplete
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.exe
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.pdb
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.exe.config
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.exe
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MotoGP_Ponomarev.pdb
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignColors.dll
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.dll
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\ModelLibrary.dll
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\ModelLibrary.pdb
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.pdb
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\bin\Debug\MaterialDesignThemes.Wpf.xml
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csprojAssemblyReference.cache
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\MainWindow.baml
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\MainWindow.g.cs
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\App.g.cs
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev_MarkupCompile.cache
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev_MarkupCompile.lref
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\View\App.baml
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.g.resources
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.Properties.Resources.resources
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.GenerateResource.cache
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.CoreCompileInputs.cache
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\AppMotoGP.csproj.CopyComplete
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.exe
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\MotoGP_Ponomarev\obj\Debug\MotoGP_Ponomarev.pdb

@@ -1,0 +1,18 @@
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\bin\Debug\ModelLibrary.dll
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\bin\Debug\ModelLibrary.pdb
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.csprojAssemblyReference.cache
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.dll
+C:\Users\ryder\OneDrive\Рабочий стол\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.pdb
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\bin\Debug\ModelLibrary.dll
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\bin\Debug\ModelLibrary.pdb
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.csprojAssemblyReference.cache
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.dll
+C:\Users\NapiformGoose\Desktop\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.pdb
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\bin\Debug\ModelLibrary.dll
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\bin\Debug\ModelLibrary.pdb
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.csprojAssemblyReference.cache
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.csproj.CoreCompileInputs.cache
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.dll
+F:\Учёба\Study\Course 3\ООП, Пономарёв ЗИТ-31\OOP_KP_MotoGP13\MotoGP_Ponomarev\ModelLibrary\obj\Debug\ModelLibrary.pdb
